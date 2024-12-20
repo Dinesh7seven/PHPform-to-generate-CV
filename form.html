@@ -1,0 +1,32 @@
+<form method="POST">
+    <h3>Contact Details</h3>
+    <input type="text" name="name" placeholder="Full Name" required>
+    <input type="email" name="email" placeholder="Email Address" required>
+    <input type="text" name="phone" placeholder="Phone Number" required>
+
+    <h3>Education</h3>
+    <div id="education-section">
+        <div class="education-entry">
+            <input type="text" name="degree[]" placeholder="Course">
+            <input type="text" name="institution[]" placeholder="Institution">
+            <input type="text" name="edu_date[]" placeholder="Completion Date">
+            <input type="text" name="marks[]" placeholder="Marks/Percentage">
+        </div>
+    </div>
+    <button type="button" onclick="addEducation()">Add More Education</button>
+
+    <h3>Work Experience</h3>
+    <div id="experience-section">
+        <div class="experience-entry">
+            <input type="text" name="job_title[]" placeholder="Job Title">
+            <input type="text" name="company[]" placeholder="Company">
+            <input type="text" name="work_date[]" placeholder="Dates">
+        </div>
+    </div>
+    <button type="button" onclick="addExperience()">Add More Experience</button>
+
+    <h3>Skills</h3>
+    <textarea name="skills" rows="4" placeholder="List your skills, separated by commas."></textarea>
+
+    <button type="submit">Generate CV</button>
+</form>
